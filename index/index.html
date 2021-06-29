@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Exercitar</title>
+
+</head>
+
+<!-- https://www.w3schools.com/js/pic_bulboff.gif
+https://www.w3schools.com/js/pic_bulbon.gif -->
+
+<body>
+    <h1 style="text-align: center">Liga e Desliga</h1>
+    <img src="https://www.w3schools.com/js/pic_bulboff.gif" width="110" height="200"
+        style="margin: 0 auto; display: block">
+
+    <script>
+        const imagem = document.querySelector('img')
+        let offOn = false
+
+        imagem.addEventListener('click', () => {
+            offOn = !offOn
+            const url = offOn ? 'https://www.w3schools.com/js/pic_bulbon.gif' : 'https://www.w3schools.com/js/pic_bulboff.gif'
+            imagem.src = url
+        })
+    </script>
+</body>
+
+</html>
